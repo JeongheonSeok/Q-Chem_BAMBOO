@@ -1,0 +1,15 @@
+$molecule
+chargeloc
+xyzloc
+$end
+
+$rem
+   JOB_TYPE  =  Force
+   BASIS  =  def2-SVPD
+   METHOD  =  B3LYP
+   SCF_CONVERGENCE  =  10
+   SCF_MAX_CYCLES  =  100
+   CHELPG  =  TRUE
+   MEM_TOTAL  =  128000
+   MEM_STATIC  =  1280
+$end

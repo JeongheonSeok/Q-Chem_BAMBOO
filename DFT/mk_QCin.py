@@ -14,8 +14,8 @@ import re
 
 directory = '.'                 # working directory
 xyzdir = './xyz'
-spdir = './SP'
-qcformat = 'SPformat.in'
+qcdir = './QCin'
+qcformat = 'QCformat.in'
 xyzindicator = 'xyzloc'         # input format exchange
 chargeindicator = 'chargeloc'
 
@@ -77,8 +77,8 @@ for xyz_file in xyz_files:
         
     # Create an input file with coordinates entered
     file_name = xyz_file[:-4] + '_SP.in'
-    if not os.path.exists(spdir):
-        os.makedirs(spdir)
-    file_path = os.path.join(spdir, file_name)
+    if not os.path.exists(qcdir):
+        os.makedirs(qcdir)
+    file_path = os.path.join(qcdir, file_name)
     with open(file_path, 'w') as file:
         file.write(qcin)
